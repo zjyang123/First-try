@@ -6,6 +6,7 @@ import { CartPage } from '../cart/cart';
 import { ServicePage } from '../service/service';
 
 @Component({
+  selector: 'page-tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
@@ -14,6 +15,7 @@ export class TabsPage {
   tab2Root = HistoryPage;
   tab3Root = CartPage;
   tab4Root = ServicePage;
+  
 
   constructor() {
 

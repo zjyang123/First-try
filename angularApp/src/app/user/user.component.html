@@ -1,0 +1,4 @@
+<label for="username">Username:</label>
+<input type="radio" class="form-control" name="" value="" [(ngModel)]="userNameString" (input)="onUpdate($event)">
+<button type="button" name="button" class="btn btn-warning" [disabled]="resetButtonDisabled" (click)="onResetClick()">Reset</button>
+<p>{{ userNameString }}</p>

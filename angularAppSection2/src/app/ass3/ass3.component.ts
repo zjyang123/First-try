@@ -18,11 +18,7 @@ export class Ass3Component implements OnInit {
 
   onClick(){
     this.numberLog.push(new Date());
-    if (this.toggleOn == true) {
-      this.toggleOn = false;
-    }else {
-      this.toggleOn = true;
-    }
+      this.toggleOn = !this.toggleOn;
 
   }
 

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>My Counter</h1>
+      <app-buttons (myTimer)="countedNumbers($event)"></app-buttons>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <h3>Even</h3>
+      <app-even
+        *ngFor="let evenNumber of evenNumbers" [numbers]="evenNumber"></app-even>
+    </div>
+    <div class="col-xs-6">
+      <h3>Odd</h3>
+      <app-odd *ngFor="let oddNumber of oddNumbers" [numbers]="oddNumber"></app-odd>
+    </div>
+  </div>
+</div>
